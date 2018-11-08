@@ -1,4 +1,4 @@
-package jsonwrap
+package marshalwrap
 
 import (
 	"encoding/json"
@@ -7,7 +7,7 @@ import (
 )
 
 // MarshalWrap returns the JSON Marshaled string wrapped in a key.
-func MarshalWrap(s interface{}, key string) (string, error) {
+func Wrap(s interface{}, key string) (string, error) {
 	if len(key) < 1 {
 		return "", errors.New("Key must be at least 1 character")
 	}
