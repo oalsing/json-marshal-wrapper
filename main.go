@@ -6,7 +6,7 @@ import (
 	"fmt"
 )
 
-// MarshalWrap returns a the JSON Marshaled string wrapped in key.
+// MarshalWrap returns the JSON Marshaled string wrapped in a key.
 func MarshalWrap(s interface{}, key string) (string, error) {
 	if len(key) < 1 {
 		return "", errors.New("Key must be at least 1 character")
