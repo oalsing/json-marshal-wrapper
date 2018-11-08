@@ -27,7 +27,7 @@ mockProduct := product.Product{
   Name:      "Golang",
 }
 
-product_j, err := jsonwrap.MarshalWrap(mockProduct, "product")
+product_j, err := marshalwrap.Wrap(mockProduct, "product")
 ```
 
 ## Installation
